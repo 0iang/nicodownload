@@ -25,59 +25,22 @@
     var video;
     var videosrc;
 
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 2000);
+    
+    for(var i = 1;i <= 10; i += 1){
 
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 3000);
+        setTimeout(()=>{
+            nicodownload();
+        }, i*1000);
 
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 4000);
+    }
 
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 5000);
 
-    setTimeout(()=>{
+    function nicodownload(){
         video = document.querySelector("#MainVideoPlayer video");
         videosrc = video.attributes.src.value;//下载链接
         downloadTag.setAttribute('href',videosrc);
-    }, 6000);
-
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 7000);
-
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 8000);
-
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 9000);
-
-    setTimeout(()=>{
-        video = document.querySelector("#MainVideoPlayer video");
-        videosrc = video.attributes.src.value;//下载链接
-        downloadTag.setAttribute('href',videosrc);
-    }, 10000);
+    }
+    
 
     // Your code here...
 })();
