@@ -16,7 +16,7 @@
     document.querySelector("body > a").classList.add("downloadTag");
     var downloadTag = document.querySelector(".downloadTag");
     downloadTag.innerHTML = "下载视频";
-    downloadTag.style.position = 'absolute';
+    downloadTag.style.position = 'fixed';
     downloadTag.style.left = '0%';
     downloadTag.style.top = '50%';
     downloadTag.style.backgroundColor = "red"
